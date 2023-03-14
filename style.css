@@ -49,6 +49,15 @@ body {
   header {
     font-size: 24px;
   }
+  .about-text{
+    font-size: 20px;
+  }
+  #skills{
+    size-adjust: 20px;
+  }
+  #projects{
+    size: 20px;
+  }
 }
 
 a {

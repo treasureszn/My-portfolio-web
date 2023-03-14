@@ -1,0 +1,246 @@
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #0f0d1e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  opacity: 0;
+        animation: fadeIn ease-in 1s;
+        -webkit-animation: fadeIn ease-in 1s;
+        -moz-animation: fadeIn ease-in 1s;
+        -o-animation: fadeIn ease-in 1s;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+        -o-animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.logo img {
+  max-height: 50px;
+  max-width: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    font-size: 24px;
+  }
+}
+
+a {
+  color: #f96c39;
+  text-decoration: none;
+}
+
+h2 {
+  color: #f96c39;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  background-color: #3c3c3c;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  padding: 20px;
+  width: calc(33.33% - 20px);
+}
+
+
+.project h3 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project img {
+  max-width: 100%;
+}
+
+
+/* Style the navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4b0082; /* Dark purple as main color */
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+/* Style the logo */
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Style the navigation links */
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px; /* Space between navbar elements */
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  color: #ff8c00; /* Bright orange accent color */
+}
+
+/* Style the Contact Me section */
+#contact {
+  background-color: #4b0082; /* Light gray background */
+  padding: 50px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 50px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+#contact textarea {
+  height: 300px;
+  resize: horizontal;
+}
+
+#contact button[type="submit"] {
+  background-color: #ff8c00; /* Bright orange button color */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: #ffaf5a; /* Lighter orange on hover */
+}
+
+
+#about{
+  margin-top: 60px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  margin-left: 40px; /* add some margin to the left */
+  margin-right: 40px;
+  font-size: 20px;
+}
+
+
+.about-image {
+  flex: 1;
+  order: -1;
+  margin-left: 20px; /* add some spacing between the text and image */
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30%;
+}
+
+.about-image {
+  flex: 1;
+  order: -1;
+  margin-left: 20px;
+  max-width: 300px; /* set a max-width */
+}
+
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#contact{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#skills {
+  margin-top: -300px; 
+  margin-bottom: 200px;
+}
